@@ -13,7 +13,7 @@ for j in range(No_of_days):
             ndx = Students.index(Students[k])
             empty_list[ndx] += 1
 Total_attendance = empty_list
-for i in range(len(Students)):
+for i in No_of_students:
     Roll_no = i+1
     Day_attendance = Total_attendance[i]
     Attendance_percentage = (Day_attendance/No_of_days)*100
