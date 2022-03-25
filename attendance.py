@@ -1,4 +1,3 @@
-
 No_of_students = int(input("Enter number of students : "))
 No_of_days = int(input("Enter number of days : "))
 Students = []
