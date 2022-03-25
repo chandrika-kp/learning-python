@@ -6,12 +6,11 @@ for i in range(No_of_students):
     i = input("Enter student name:"+str(i+1)+"   ")
     Students.append(i)
 Students.sort()
-print(Students)
 empty_list = [0] * (len(Students))
 for j in range(No_of_days):
     for k in range(No_of_students):
         l = input("If %s was present today: Enter p if NOT Enter a :     " % Students[k])
-        if l == 'p':
+        if l.lower() == 'p':
             ndx = Students.index(Students[k])
             empty_list[ndx] += 1
 Total_attendance = empty_list
